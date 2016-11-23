@@ -18,6 +18,7 @@ object ServiceErrorCode extends Enumeration {
   val EC_UC_MOBILE_TOKEN = Value(10001008, "手机号已被占用，请更换手机号。")
   val EC_UC_EMAIL_TOKEN = Value(10001009, "邮箱已被占用，请更换邮箱。")
   val EC_UC_MEMBER_NOT_EXISTS = Value(10001010, "会员不存在。")
+  val EC_UC_MEMBER_INVALID_USERNAME_OR_PWD = Value(10001011, "用户名或密码错误。")
 
   def get(id: Int): ServiceErrorCode = ServiceErrorCode.values.filter(_.id == id).head
 }
