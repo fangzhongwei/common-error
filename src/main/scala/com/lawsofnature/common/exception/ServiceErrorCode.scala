@@ -21,6 +21,9 @@ object ServiceErrorCode extends Enumeration {
   val EC_UC_MEMBER_INVALID_USERNAME_OR_PWD = Value(10001011, "用户名或密码错误。")
   val EC_UC_MEMBER_ACCOUNT_FREEZE = Value(10001012, "您的账户已冻结,请联系客服。")
 
+  val EC_SSO_SESSION_EXPIRED = Value(10002001, "会话已过期，请重新登录。")
+  val EC_SSO_SESSION_REPELLED = Value(10002002, "您的账号已在其他设备登录。")
+
   def get(id: Int): ServiceErrorCode = ServiceErrorCode.values.filter(_.id == id).head
 }
 
