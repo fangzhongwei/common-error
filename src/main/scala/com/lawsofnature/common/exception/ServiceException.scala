@@ -1,24 +1,23 @@
 package com.lawsofnature.common.exception
 
-import com.lawsofnature.common.exception.ServiceErrorCode.ServiceErrorCode
 
 /**
   * Created by fangzhongwei on 2016/11/5.
   */
 case class ServiceException private(message: String) extends RuntimeException(message) {
-  private var errorCode: ServiceErrorCode = _
+  private var errorCode: ErrorCode = _
 
-  def getErrorCode: ServiceErrorCode = errorCode
+  def getErrorCode: ErrorCode = errorCode
 }
 
 object ServiceException {
-  private val ERROR_MAP: scala.collection.mutable.Map[ServiceErrorCode, ServiceException] = scala.collection.mutable.Map[ServiceErrorCode, ServiceException]()
+  private val ERROR_MAP: scala.collection.mutable.Map[ErrorCode, ServiceException] = scala.collection.mutable.Map[ErrorCode, ServiceException]()
 
-  private def get(serviceErrorCode: ServiceErrorCode): Option[ServiceException] = ERROR_MAP.get(serviceErrorCode)
+  private def get(serviceErrorCode: ErrorCode): Option[ServiceException] = ERROR_MAP.get(serviceErrorCode)
 
-  private def put(serviceErrorCode: ServiceErrorCode, serviceException: ServiceException): Unit = ERROR_MAP += (serviceErrorCode -> serviceException)
+  private def put(serviceErrorCode: ErrorCode, serviceException: ServiceException): Unit = ERROR_MAP += (serviceErrorCode -> serviceException)
 
-  def make(serviceErrorCode: ServiceErrorCode): ServiceException = {
+  def make(serviceErrorCode: ErrorCode): ServiceException = {
     ServiceException.get(serviceErrorCode) match {
       case Some(exception) => exception
       case None =>
