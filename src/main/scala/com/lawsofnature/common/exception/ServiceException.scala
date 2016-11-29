@@ -8,16 +8,7 @@ import com.lawsofnature.common.exception.ServiceErrorCode.ServiceErrorCode
 case class ServiceException private(message: String) extends RuntimeException(message) {
   private var errorCode: ServiceErrorCode = _
 
-  def make(serviceErrorCode: ServiceErrorCode): ServiceException = {
-     ServiceException.get(serviceErrorCode) match {
-       case Some(exception) => exception
-       case None =>
-         val serviceException: ServiceException = new ServiceException(serviceErrorCode.toString)
-         serviceException.errorCode = serviceErrorCode
-         ServiceException.put(serviceErrorCode, serviceException)
-         serviceException
-     }
-  }
+  def getErrorCode: ServiceErrorCode = errorCode
 }
 
 object ServiceException {
@@ -26,4 +17,15 @@ object ServiceException {
   private def get(serviceErrorCode: ServiceErrorCode): Option[ServiceException] = ERROR_MAP.get(serviceErrorCode)
 
   private def put(serviceErrorCode: ServiceErrorCode, serviceException: ServiceException): Unit = ERROR_MAP += (serviceErrorCode -> serviceException)
+
+  def make(serviceErrorCode: ServiceErrorCode): ServiceException = {
+    ServiceException.get(serviceErrorCode) match {
+      case Some(exception) => exception
+      case None =>
+        val serviceException: ServiceException = new ServiceException(serviceErrorCode.toString)
+        serviceException.errorCode = serviceErrorCode
+        ServiceException.put(serviceErrorCode, serviceException)
+        serviceException
+    }
+  }
 }
