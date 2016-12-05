@@ -22,7 +22,9 @@ public enum ErrorCode {
     EC_UC_MEMBER_ACCOUNT_FREEZE(10001012, "您的账户已冻结,请联系客服。"),
 
     EC_SSO_SESSION_EXPIRED(10002001, "会话已过期，请重新登录。"),
-    EC_SSO_SESSION_REPELLED(10002002, "您的账号已在其他设备登录。");
+    EC_SSO_SESSION_REPELLED(10002002, "您的账号已在其他设备登录。"),
+
+    EC_ED_TICKET_NOT_EXISTS(10003001, "ticket不存在。");
 
     private int code;
     private String message;
