@@ -20,7 +20,10 @@ public enum ErrorCode {
     EC_GC_CONFIG_ERROR("EC_GC_CONFIG_ERROR", "系统配置错误。"),
     EC_SMS_TYPE_CONFIG_ERROR("EC_SMS_TYPE_CONFIG_ERROR", "信息类型配置错误。"),
     EC_SMS_DAY_LIMIT_ERROR("EC_SMS_DAY_LIMIT_ERROR", "一个手机号每天最多获取3次验证码。"),
-    EC_SMS_SEND_TOO_OFTEN_ERROR("EC_SMS_SEND_TOO_OFTEN_ERROR", "短信发送过于频繁。");
+    EC_SMS_SEND_TOO_OFTEN_ERROR("EC_SMS_SEND_TOO_OFTEN_ERROR", "验证码发送过于频繁。"),
+
+    EC_SMS_WRONG_CODE("EC_SMS_WRONG_CODE", "验证码不正确。"),
+    EC_SMS_CODE_EXPIRED_ERROR("EC_SMS_CODE_EXPIRED_ERROR", "验证码已过期。");
 
     private String code;
     private String desc;
