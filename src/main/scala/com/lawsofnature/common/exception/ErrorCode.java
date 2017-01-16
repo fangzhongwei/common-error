@@ -23,7 +23,12 @@ public enum ErrorCode {
     EC_SMS_SEND_TOO_OFTEN_ERROR("EC_SMS_SEND_TOO_OFTEN_ERROR", "验证码发送过于频繁。"),
 
     EC_SMS_WRONG_CODE("EC_SMS_WRONG_CODE", "验证码不正确。"),
-    EC_SMS_CODE_EXPIRED_ERROR("EC_SMS_CODE_EXPIRED_ERROR", "验证码已过期。");
+    EC_SMS_CODE_EXPIRED_ERROR("EC_SMS_CODE_EXPIRED_ERROR", "验证码已过期。"),
+
+    EC_GAME_INVALID_RESULT("EC_GAME_INVALID_RESULT", "游戏结算结果不正确。"),
+    EC_ORDER_PAYMENT_ORDER_NOT_FOUND("EC_ORDER_PAYMENT_ORDER_NOT_FOUND", "支付订单不存在。"),
+
+    EC_ACCOUNT_NOT_EXIST("EC_ACCOUNT_NOT_EXIST", "账户不存在。");
 
     private String code;
     private String desc;
