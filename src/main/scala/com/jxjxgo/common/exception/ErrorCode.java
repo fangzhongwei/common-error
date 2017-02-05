@@ -30,7 +30,9 @@ public enum ErrorCode {
     EC_ORDER_ORDER_FINISHED("EC_ORDER_ORDER_FINISHED", "订单已结束。"),
     EC_ORDER_AMOUNT_NOT_MATCHED("EC_ORDER_AMOUNT_NOT_MATCHED", "支付金额与订单金额不一致。"),
 
-    EC_ACCOUNT_NOT_EXIST("EC_ACCOUNT_NOT_EXIST", "账户不存在。");
+    EC_ACCOUNT_NOT_EXIST("EC_ACCOUNT_NOT_EXIST", "账户不存在。"),
+
+    EC_I18N_LAN_NOT_EXIST("EC_I18N_LAN_NOT_EXIST", "语言不存在。");
 
     private String code;
     private String desc;
