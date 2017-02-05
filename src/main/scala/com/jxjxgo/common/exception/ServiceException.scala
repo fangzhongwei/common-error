@@ -1,4 +1,4 @@
-package com.lawsofnature.common.exception
+package com.jxjxgo.common.exception
 
 
 /**

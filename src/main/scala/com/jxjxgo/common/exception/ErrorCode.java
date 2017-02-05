@@ -1,4 +1,4 @@
-package com.lawsofnature.common.exception;
+package com.jxjxgo.common.exception;
 
 /**
  * Created by fangzhongwei on 2016/11/29.
