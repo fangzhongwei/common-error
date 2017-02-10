@@ -11,7 +11,7 @@ case class ServiceException private(message: String) extends RuntimeException(me
 }
 
 object ServiceException {
-  private val ERROR_MAP: scala.collection.mutable.Map[ErrorCode, ServiceException] = scala.collection.mutable.Map[ErrorCode, ServiceException]()
+  private[this] val ERROR_MAP: scala.collection.mutable.Map[ErrorCode, ServiceException] = scala.collection.mutable.Map[ErrorCode, ServiceException]()
 
   private def get(serviceErrorCode: ErrorCode): Option[ServiceException] = ERROR_MAP.get(serviceErrorCode)
 
