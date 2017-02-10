@@ -32,7 +32,11 @@ public enum ErrorCode {
 
     EC_ACCOUNT_NOT_EXIST("EC_ACCOUNT_NOT_EXIST", "账户不存在。"),
 
-    EC_I18N_LAN_NOT_EXIST("EC_I18N_LAN_NOT_EXIST", "语言不存在。");
+    EC_I18N_LAN_NOT_EXIST("EC_I18N_LAN_NOT_EXIST", "语言不存在。"),
+
+    EC_GAME_NOT_ENOUGH_DIAMOND("EC_GAME_NOT_ENOUGH_DIAMOND", "您的钻石不足，无法进入该房间。"),
+
+    EC_GAME_DIAMOND_TOO_MUCH("EC_GAME_DIAMOND_TOO_MUCH", "您的钻石太多，无法进入该房间。");
 
     private String code;
     private String desc;
