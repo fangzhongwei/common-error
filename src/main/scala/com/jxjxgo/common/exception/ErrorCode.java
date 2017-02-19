@@ -14,6 +14,7 @@ public enum ErrorCode {
 
     EC_SSO_SESSION_EXPIRED("EC_SSO_SESSION_EXPIRED", "会话已过期，请重新登录。"),
     EC_SSO_SESSION_REPELLED("EC_SSO_SESSION_REPELLED", "您的账号已在其他设备登录。"),
+    EC_SSO_TOKEN_DEVICE_MISMATCH("EC_SSO_TOKEN_DEVICE_MISMATCH", "会话与当前设备不相符。"),
 
     EC_ED_TICKET_NOT_EXISTS("EC_ED_TICKET_NOT_EXISTS", "ticket不存在。"),
 
