@@ -37,7 +37,11 @@ public enum ErrorCode {
 
     EC_GAME_NOT_ENOUGH_DIAMOND("EC_GAME_NOT_ENOUGH_DIAMOND", "您的钻石不足，无法进入该房间。"),
 
-    EC_GAME_DIAMOND_TOO_MUCH("EC_GAME_DIAMOND_TOO_MUCH", "您的钻石太多，无法进入该房间。");
+    EC_GAME_DIAMOND_TOO_MUCH("EC_GAME_DIAMOND_TOO_MUCH", "您的钻石太多，无法进入该房间。"),
+
+    EC_GAME_INVALID_REQUEST_DATA("EC_GAME_INVALID_REQUEST_DATA", "请求数据不合法。"),
+    EC_GAME_GAME_NOT_EXIST("EC_GAME_GAME_NOT_EXIST", "游戏不存在。"),
+    PLAY_GAME_CARDS_NOT_BIG_ENOUGH("PLAY_GAME_CARDS_NOT_BIG_ENOUGH", "您的牌太小了。");
 
     private String code;
     private String desc;
