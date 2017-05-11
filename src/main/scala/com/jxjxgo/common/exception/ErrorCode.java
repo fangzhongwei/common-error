@@ -41,7 +41,9 @@ public enum ErrorCode {
 
     EC_GAME_INVALID_REQUEST_DATA("EC_GAME_INVALID_REQUEST_DATA", "请求数据不合法。"),
     EC_GAME_GAME_NOT_EXIST("EC_GAME_GAME_NOT_EXIST", "游戏不存在。"),
-    PLAY_GAME_CARDS_NOT_BIG_ENOUGH("PLAY_GAME_CARDS_NOT_BIG_ENOUGH", "您的牌太小了。");
+    PLAY_GAME_CARDS_NOT_BIG_ENOUGH("PLAY_GAME_CARDS_NOT_BIG_ENOUGH", "您的牌太小了。"),
+
+    EC_SPORT_NO_DATA("EC_SPORT_NO_DATA", "没有数据。");
 
     private String code;
     private String desc;
