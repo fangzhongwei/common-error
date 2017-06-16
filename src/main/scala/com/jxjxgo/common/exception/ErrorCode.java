@@ -9,6 +9,13 @@ public enum ErrorCode {
     EC_INVALID_REQUEST("EC_INVALID_REQUEST", "不正确的请求，请检查输入。"),
 
     EC_UC_INVALID_MOBILE("EC_UC_INVALID_MOBILE", "手机号格式不正确，请修改或重新输入。"),
+    EC_UC_INVALID_EMAIL("EC_UC_INVALID_EMAIL", "邮箱格式不正确，请修改或重新输入。"),
+    EC_UC_USERNAME_TAKEN("EC_UC_USERNAME_TAKEN", "用户名已被占用。"),
+    EC_UC_MOBILE_TAKEN("EC_UC_MOBILE_TAKEN", "手机号已被占用。"),
+    EC_UC_EMAIL_TAKEN("EC_UC_EMAIL_TAKEN", "邮箱已被占用。"),
+    EC_UC_INVALID_UN_OR_PWD("EC_UC_INVALID_UN_OR_PWD", "用户名或密码不正确。"),
+    EC_UC_INVALID_CHECK_CODE("EC_UC_INVALID_CHECK_CODE", "校验码不正确。"),
+
     EC_UC_MEMBER_ACCOUNT_FREEZE("EC_UC_MEMBER_ACCOUNT_FREEZE", "您的账户已冻结。"),
     EC_UC_MEMBER_NOT_EXISTS("EC_UC_MEMBER_NOT_EXISTS", "会员信息未找到。"),
 
