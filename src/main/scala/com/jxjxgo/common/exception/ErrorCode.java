@@ -7,6 +7,7 @@ public enum ErrorCode {
 
     EC_SYSTEM_ERROR("EC_SYSTEM_ERROR", "系统目前无法处理您的请求，请稍后再试。"),
     EC_INVALID_REQUEST("EC_INVALID_REQUEST", "不正确的请求，请检查输入。"),
+    EC_ACCESS_DENY("EC_ACCESS_DENY", "拒绝访问。"),
 
     EC_UC_INVALID_MOBILE("EC_UC_INVALID_MOBILE", "手机号格式不正确，请修改或重新输入。"),
     EC_UC_INVALID_EMAIL("EC_UC_INVALID_EMAIL", "邮箱格式不正确，请修改或重新输入。"),
@@ -15,9 +16,12 @@ public enum ErrorCode {
     EC_UC_EMAIL_TAKEN("EC_UC_EMAIL_TAKEN", "邮箱已被占用。"),
     EC_UC_INVALID_UN_OR_PWD("EC_UC_INVALID_UN_OR_PWD", "用户名或密码不正确。"),
     EC_UC_INVALID_CHECK_CODE("EC_UC_INVALID_CHECK_CODE", "校验码不正确。"),
+    EC_UC_MEMBER_LOCKED("EC_UC_MEMBER_LOCKED", "您的账户已锁定。"),
 
     EC_UC_MEMBER_ACCOUNT_FREEZE("EC_UC_MEMBER_ACCOUNT_FREEZE", "您的账户已冻结。"),
     EC_UC_MEMBER_NOT_EXISTS("EC_UC_MEMBER_NOT_EXISTS", "会员信息未找到。"),
+
+    EC_UC_INVALID_USERNAME("EC_UC_INVALID_USERNAME", "用户名不合法。"),
 
     EC_SSO_SESSION_EXPIRED("EC_SSO_SESSION_EXPIRED", "会话已过期，请重新登录。"),
     EC_SSO_SESSION_REPELLED("EC_SSO_SESSION_REPELLED", "您的账号已在其他设备登录。"),
