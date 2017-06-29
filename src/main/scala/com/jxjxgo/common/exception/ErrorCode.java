@@ -15,6 +15,7 @@ public enum ErrorCode {
     EC_UC_MOBILE_TAKEN("EC_UC_MOBILE_TAKEN", "手机号已被占用。"),
     EC_UC_EMAIL_TAKEN("EC_UC_EMAIL_TAKEN", "邮箱已被占用。"),
     EC_UC_INVALID_UN_OR_PWD("EC_UC_INVALID_UN_OR_PWD", "用户名或密码不正确。"),
+    EC_UC_INVALID_PWD("EC_UC_INVALID_PWD", "密码不正确。"),
     EC_UC_INVALID_CHECK_CODE("EC_UC_INVALID_CHECK_CODE", "校验码不正确。"),
     EC_UC_MEMBER_LOCKED("EC_UC_MEMBER_LOCKED", "您的账户已锁定。"),
 
@@ -53,6 +54,9 @@ public enum ErrorCode {
     EC_GAME_INVALID_REQUEST_DATA("EC_GAME_INVALID_REQUEST_DATA", "请求数据不合法。"),
     EC_GAME_GAME_NOT_EXIST("EC_GAME_GAME_NOT_EXIST", "游戏不存在。"),
     PLAY_GAME_CARDS_NOT_BIG_ENOUGH("PLAY_GAME_CARDS_NOT_BIG_ENOUGH", "您的牌太小了。"),
+
+
+    MSG_MSG_NOT_EXISTS("MSG_MSG_NOT_EXISTS", "没有找到信息。"),
 
     EC_SPORT_NO_DATA("EC_SPORT_NO_DATA", "没有数据。");
 
