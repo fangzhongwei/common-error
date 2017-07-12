@@ -22,4 +22,8 @@ object Asserts {
   def assertNotNull(str: Any, errorCode: ErrorCode) = {
     if (str == null) throw ServiceException.make(errorCode)
   }
+
+  def assertTrue(boolean: Boolean, errorCode: ErrorCode) = {
+    if (!boolean) throw ServiceException.make(errorCode)
+  }
 }
