@@ -16,7 +16,7 @@ object Asserts {
   }
 
   def assertNotBlank(str: String, errorCode: ErrorCode) = {
-    if (str == null || !"0".equals(str.trim)) throw ServiceException.make(errorCode)
+    if (str == null || "".equals(str.trim)) throw ServiceException.make(errorCode)
   }
 
   def assertNotNull(str: Any, errorCode: ErrorCode) = {
