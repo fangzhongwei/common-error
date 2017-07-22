@@ -85,6 +85,10 @@ public enum ErrorCode {
     DB_UPDATE_FAILURE("DB_UPDATE_FAILURE", "数据更新失败。"),
     DB_INSERT_FAILURE("DB_INSERT_FAILURE", "数据插入失败。"),
 
+    DB_CACHE_EXPIRE_TIME_MUST_BIGGER_THAN_ZERO("DB_CACHE_EXPIRE_TIME_MUST_BIGGER_THAN_ZERO", "缓存过期时间必须大于0。"),
+    DB_CACHE_KEY_TOO_LONG("DB_CACHE_KEY_TOO_LONG", "缓存Key太长。"),
+    DB_CACHE_VALUE_TOO_LONG("DB_CACHE_VALUE_TOO_LONG", "缓存Value太长。"),
+
     EC_SPORT_NO_DATA("EC_SPORT_NO_DATA", "没有数据。");
 
     private String code;
